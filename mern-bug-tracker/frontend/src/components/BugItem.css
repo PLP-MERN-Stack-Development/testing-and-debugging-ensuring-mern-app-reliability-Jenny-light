@@ -1,0 +1,105 @@
+.bug-item {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: white;
+  }
+  
+  .bug-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  }
+  
+  .bug-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    gap: 10px;
+  }
+  
+  .bug-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+    flex: 1;
+  }
+  
+  .bug-badges {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  
+  .badge {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .bug-description {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .bug-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #888;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .bug-actions {
+    display: flex;
+    gap: 10px;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .status-select {
+    flex: 1;
+    padding: 8px 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: border-color 0.3s;
+  }
+  
+  .status-select:focus {
+    outline: none;
+    border-color: #667eea;
+  }
+  
+  .status-select:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .delete-button {
+    padding: 8px 16px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-button:hover:not(:disabled) {
+    background-color: #d32f2f;
+  }
+  
+  .delete-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
